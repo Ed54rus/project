@@ -20,10 +20,10 @@ body {
 }
 
 .content-center {
-  /* max-width: 1172px;
+  max-width: 1172px;
   padding: 0 16px 0 16px;
-  box-sizing: border-box; */
-  max-width: 1140px;
+  box-sizing: border-box;
+  /* max-width: 1140px; */
   width: 100%;
   margin: 0 auto;
 }
@@ -144,7 +144,7 @@ body {
 .page-header-banner-wrp {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  
+
 }
 
 .page-header-banner-img {
@@ -239,17 +239,20 @@ body {
 }
 
 /* Breadcrumbs-end */
+/* Categories start   */
 
 .categories {
   margin: 52px auto 109px auto;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(233px, 1fr));
+  gap: 30px;
+  /* grid-auto-flow: dense; */
 }
 
 .categories-item {
+  align-self: center;
   text-decoration: none;
   min-height: 260px;
-  max-width: 360px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -279,7 +282,6 @@ body {
 
 .categories-item:nth-child(2) {
   background-image: url(..//img/men.jpg);
-  margin: 0 30px 0 30px;
 }
 
 .categories-item:nth-child(3) {
@@ -289,9 +291,7 @@ body {
 .categories-item:nth-child(4) {
   background-image: url(..//img/accs.jpg);
   min-height: 180px;
-  max-width: 1140px;
-  width: 100%;
-  margin: 30px 0 0 0;
+  grid-column: span 3;
 }
 
 .categories-item-subtitle {
@@ -311,6 +311,8 @@ body {
   text-transform: uppercase;
 }
 
+/* Categories end */
+/* Products start */
 .products {
   display: flex;
   flex-direction: column;
@@ -338,14 +340,16 @@ body {
 }
 
 .products-item-wrp {
-  margin: 33px 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  margin: 48px 0 33px 0;
+  max-width: 1140px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 360px);
+  gap: 30px;
+  justify-content: center;
 }
 
 .products-item {
-  margin: 15px 0 15px 0;
   max-width: 360px;
   background-color: #F8F8F8;
   padding: 0 0 20px 0;
@@ -362,7 +366,8 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 360px;
+  max-width: 360px;
+  width: 100%;
   height: 420px;
   z-index: 5;
   justify-content: center;
@@ -413,7 +418,7 @@ body {
 }
 
 .products-item-title {
-  margin: 0 0 25px 0;
+  margin: 0 0 13px 0;
   font-size: 13px;
   line-height: 16px;
   color: #000000;
@@ -464,7 +469,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 56px 0 56px 0;
+  padding: 103px 0 103px 0;
 }
 
 .features-item {
@@ -472,7 +477,7 @@ body {
   flex-direction: column;
   align-items: center;
   max-width: 300px;
-  padding: 48px 16px 48px 16px;
+  padding: px 16px px 16px;
 }
 
 .features-item-icon {
