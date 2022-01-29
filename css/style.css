@@ -337,7 +337,7 @@ body {
   text-transform: uppercase;
 }
 
-.products-item-wrp {
+.products-item-list {
   margin: 48px 0 33px 0;
   max-width: 1140px;
   width: 100%;
@@ -345,6 +345,10 @@ body {
   grid-template-columns: repeat(auto-fill, 360px);
   gap: 30px;
   justify-content: center;
+}
+
+.products-item-list {
+  list-style-type: none;
 }
 
 .products-item {
