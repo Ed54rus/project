@@ -349,6 +349,7 @@ body {
 
 .products-item-list {
   list-style-type: none;
+  padding: 0;
 }
 
 .products-item {
