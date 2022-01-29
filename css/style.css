@@ -88,7 +88,7 @@ body {
 
 .page-header-nav {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   width: 100%;
   padding: 0;
 }
@@ -115,6 +115,7 @@ body {
   width: 32px;
   height: 29px;
   position: relative;
+  margin: 0 11px 0 0;
 }
 
 .cart-btn span {
@@ -142,28 +143,25 @@ body {
 }
 
 .page-header-banner-wrp {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-
-}
-
-.page-header-banner-img {
+  min-height: 764px;
+  display: flex;
+  justify-content: flex-end;
   background-image: url(../img/preview_1.png);
   background-repeat: no-repeat;
-  min-height: 764px;
-
+  background-position:  10px 0;
 }
 
 .page-header-banner-heading {
-  margin: 295px auto 0;
+  margin: 295px 73px;
 }
 
 .page-header-banner-title {
-  margin: 0 auto;
+  margin: 0;
+  padding: 0px 0px 0px 0px;
   max-width: 405px;
   font-weight: 900;
   font-size: 48px;
-  line-height: 48px;
+  line-height: 44px;
   text-transform: uppercase;
   border-left: 12px solid #F16D7F;
   padding-left: 16px;
