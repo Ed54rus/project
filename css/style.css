@@ -186,7 +186,7 @@ body {
 /* Breadcrumbs-start */
 
 .page-header-breadcrumbs {
-  background-color: #f1e4e6;
+  background-color: #F8F3F4;
   margin: 76px 0 0 0;
 }
 
@@ -200,6 +200,7 @@ body {
 .page-heading {
   font-size: 24px;
   line-height: 29px;
+  font-weight: normal;
   color: #f16d7f;
   text-transform: uppercase;
 }
@@ -237,6 +238,150 @@ body {
 }
 
 /* Breadcrumbs-end */
+/* Filter start */
+
+input:focus,
+button:focus {
+  outline: none;
+}
+
+input:focus-visible,
+button:focus-visible {
+  outline: 2px solid #F16D7F;
+}
+
+#switch-filter {
+  display: none;
+}
+
+#switch-filter:checked~.filter-list {
+  display: block;
+}
+
+.filter {
+  width: 360px;
+  padding: 13px 16px 16px 16px;
+  box-sizing: border-box;
+}
+
+.filter-btn {
+  display: block;
+  width: 100%;
+  margin: 0 0 16px 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  color: #000000;
+  text-align: left;
+}
+
+.filter-btn span {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16.8px;
+  text-transform: uppercase;
+}
+
+.filter-btn svg {
+  margin: 0 0 0 11px;
+  fill: currentColor;
+}
+
+.filter-btn:hover {
+  color: #F16D7F;
+}
+
+.filter-btn:active {
+  color: #222224;
+}
+
+.filter-list {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.filter-list-item {
+  width: 100%;
+  margin: 0 0 18px 0;
+  padding: 11px;
+  box-sizing: border-box;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16.8px;
+  border-bottom: 1px solid #EBEBEB;
+  position: relative;
+}
+
+.filter-list-item:before {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 37px;
+  background-color: #EF5B70;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+}
+
+.filter-list-item a {
+  text-transform: uppercase;
+  color: #EF5B70;
+  text-decoration: none;
+}
+
+.filter-list-item:hover:before {
+  background-color: red;
+}
+
+.filter-list-item:hover a {
+  color: red;
+}
+
+.filter-list-item:active:before {
+  background-color: #ccc;
+}
+
+.filter-list-item:active a {
+  color: #ccc;
+}
+
+.filter-sublist {
+  margin: 24px 0 0 0;
+  padding: 0 0 0 7px;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.filter-sublist-item {
+  margin: 0 0 11px 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16.8px;
+}
+
+.filter-sublist-item:last-child {
+  margin: 0 0 24px 0;
+}
+
+.filter-sublist-item a {
+  color: #6F6E6E;
+  text-decoration: none;
+}
+
+.filter-sublist-item:hover a {
+  color: #EF5B70;
+}
+
+.filter-sublist-item:active a {
+  color: #000;
+}
+
+/* Filter end */
 /* Categories start   */
 
 .categories {
