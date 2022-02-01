@@ -92,7 +92,13 @@ body {
   user-select: none;
 }
 
-.container {
+.btn:focus,
+.btn:active {
+  outline: none;
+  box-shadow: none;
+}
+
+.page-container {
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -272,7 +278,7 @@ body {
 
 .page-header-breadcrumbs {
   background-color: #F8F3F4;
-  margin: 76px 0 36px 0;
+  margin: 76px 0 0 0;
 }
 
 .page-header-breadcrumbs-wrp {
@@ -324,6 +330,65 @@ body {
 
 /* Breadcrumbs-end */
 
+/* Slider start */
+
+.slider-container {
+  background-color: #f7f7f7;
+  min-height: 777px;
+}
+
+.slider-container-center {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.img-sz {
+  left: 32%;
+}
+
+
+.carousel-control-next-icon {
+  width: 47px;
+  height: 47px;
+  background-size: 13px;
+  background-color: rgba(42, 42, 42, 0.15);
+  background-image: url("data:image/svg+xml,%3Csvg width='13' height='23' viewBox='0 0 13 23' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.299805 19.2499L8.0498 11.4999L0.299805 3.7499L1.8498 0.649902L12.6998 11.4999L1.8498 22.3499L0.299805 19.2499Z' /%3E%3C/svg%3E%0A");
+}
+
+.carousel-control-next:hover .carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3Csvg width='13' height='23' viewBox='0 0 13 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.299805 19.2499L8.0498 11.4999L0.299805 3.7499L1.8498 0.649902L12.6998 11.4999L1.8498 22.3499L0.299805 19.2499Z' fill='%23F16D7F'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next {
+  justify-content: flex-end;
+  width: 10%;
+  top: 50px;
+  opacity: 1;
+}
+
+
+.carousel-control-prev {
+  justify-content: flex-start;
+  width: 10%;
+  top: 50px;
+  opacity: 1;
+}
+
+.carousel-control-prev-icon {
+  width: 47px;
+  height: 47px;
+  background-size: 13px;
+  background-color: rgba(42, 42, 42, 0.15);
+  background-image: url("data:image/svg+xml,%3Csvg width='13' height='23' viewBox='0 0 13 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.6998 3.7499L4.9498 11.4999L12.6998 19.2499L11.1498 22.3499L0.299805 11.4999L11.1498 0.649902L12.6998 3.7499Z' fill='black'/%3E%3C/svg%3E");
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3Csvg width='13' height='23' viewBox='0 0 13 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.6998 3.7499L4.9498 11.4999L12.6998 19.2499L11.1498 22.3499L0.299805 11.4999L11.1498 0.649902L12.6998 3.7499Z' fill='%23F16D7F'/%3E%3C/svg%3E");
+}
+/* Slider end */
+
+
 
 
 /* Filter start */
@@ -331,7 +396,7 @@ body {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 30px;
-  margin: 0 auto 0;
+  margin: 36px auto 0;
 }
 
 .filter-items {
