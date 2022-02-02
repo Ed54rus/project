@@ -338,13 +338,14 @@ body {
 
 .slider-container-center {
   max-width: 1600px;
-  width: 99%;
+  width: 100%;
   margin: 0 auto;
 }
 
-.d-block{
-  margin: auto;
+.img-sz {
+  left: 32%;
 }
+
 
 .carousel-control-next-icon {
   width: 47px;
@@ -390,7 +391,6 @@ body {
 /* Product-details start */
 
 .product-details {
-
   position: relative;
   min-height: 600px;
   margin: 0 auto 14px;
@@ -398,10 +398,7 @@ body {
 
 .product-details-wrp {
   max-width: 1140px;
-  width: 96%;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
+  width: 100%;
   padding: 64px 0 0 0;
   box-sizing: border-box;
   background-color: #fff;
