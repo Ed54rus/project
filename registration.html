@@ -18,12 +18,16 @@
             <img src="img/logo.png" alt="logo" height="38">
           </a>
           <div class="page-header-nav">
-            <button class="page-header-search btn">
+            <input type="checkbox" id="switch-search">
+            <label class="page-header-search btn" for="switch-search">
               <svg width="27" height="28" viewBox="0 0 27 28" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M19.0596 17.6259C20.6713 15.8658 21.6282 13.6048 21.7698 11.2225C21.9113 8.84018 21.2288 6.48173 19.8369 4.54318C18.445 2.60463 16.4285 1.20404 14.126 0.576619C11.8234 -0.0508009 9.3751 0.13316 7.19217 1.09761C5.00923 2.06205 3.22463 3.74825 2.13804 5.87302C1.05145 7.9978 0.729054 10.4318 1.225 12.7661C1.72094 15.1005 3.00501 17.1932 4.86158 18.6927C6.71814 20.1922 9.03413 21.0072 11.4206 21.0009C13.673 21.004 15.8645 20.27 17.6606 18.9109L25.4086 26.7179C25.4941 26.807 25.5965 26.8781 25.7099 26.927C25.8232 26.9759 25.9452 27.0017 26.0686 27.0029C26.1923 27.0033 26.3148 26.9782 26.4283 26.9292C26.5419 26.8801 26.6441 26.8082 26.7286 26.7179C26.9025 26.537 26.9997 26.2958 26.9997 26.0449C26.9997 25.794 26.9025 25.5528 26.7286 25.3719L19.0596 17.6259ZM2.88662 10.5009C2.89946 8.81563 3.41094 7.17187 4.35659 5.77685C5.30224 4.38183 6.63972 3.29801 8.20044 2.662C9.76115 2.02599 11.4752 1.86627 13.1266 2.20298C14.7779 2.53969 16.2926 3.35775 17.4797 4.55404C18.6668 5.75033 19.4732 7.27129 19.7972 8.92519C20.1212 10.5791 19.9483 12.2919 19.3002 13.8476C18.6522 15.4034 17.5581 16.7325 16.1559 17.6674C14.7536 18.6023 13.1059 19.1011 11.4206 19.1009C9.14916 19.0901 6.97482 18.1784 5.37484 16.566C3.77486 14.9537 2.87998 12.7724 2.88662 10.5009Z" />
               </svg>
-            </button>
+            </label>
+            <form class="search-form" action="#!">
+              <input class="search-input" type="text" placeholder="Search here...">
+            </form>
             <button class="menu-btn btn">
               <svg width="32" height="23" viewBox="0 0 32 23" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 23V20.31H32V23H0ZM0 12.76V10.07H32V12.76H0ZM0 2.69V0H32V2.69H0Z" />
@@ -52,10 +56,10 @@
           </div>
         </section>
 
-       <div class="reg-container content-center">
-         <form action="#" class="reg">
-           <span class="reg-txt">Your Name</span>
-           <input class="reg-in" type="text" placeholder="First Name" required>
+        <div class="reg-container content-center">
+          <form action="#" class="reg">
+            <span class="reg-txt">Your Name</span>
+            <input class="reg-in" type="text" placeholder="First Name" required>
             <input class="reg-in" type="text" placeholder="Last Name" required maxlength="40">
             <input class="reg-gend" type="radio" name="gender" id="male">
             <label class="reg-gend-txt" for="male">Male</label>
@@ -63,24 +67,27 @@
             <label class="reg-gend-txt" for="female">Female</label>
             <span class="reg-txt">Login details</span>
             <input class="reg-in" type="email" name="email" id="email" placeholder="Email" required>
-            <input class="reg-in reg-in-last" type="password" name="pass" id="pass" placeholder="Password" required minlength="8" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$">
-            <p class="reg-hint">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>    
+            <input class="reg-in reg-in-last" type="password" name="pass" id="pass" placeholder="Password" required
+              minlength="8" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$">
+            <p class="reg-hint">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and
+              lowercase letters</p>
             <button class="submit" type="submit">join now</button>
-         </form>
-         <div class="reg-desc-wrp">
-           <h2 class="reg-desc-heading">loyalty has its perks</h2>
-           <p class="reg-desc-txt">Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you
-          join:</p>
-          <ul class="reg-desc-list">
-            <li class="reg-desc-list-item">15% off welcome offer
-</li>
-            <li class="reg-desc-list-item">Free shipping, returns and exchanges on all orders</li>
-            <li class="reg-desc-list-item">$10 off a purchase on your birthday</li>
-            <li class="reg-desc-list-item">Early access to products</li>
-            <li class="reg-desc-list-item">Exclusive offers & rewards</li>
-          </ul>
-         </div>
-       </div>
+          </form>
+          <div class="reg-desc-wrp">
+            <h2 class="reg-desc-heading">loyalty has its perks</h2>
+            <p class="reg-desc-txt">Get in on the loyalty program where you can earn points and unlock serious perks.
+              Starting with these as soon as you
+              join:</p>
+            <ul class="reg-desc-list">
+              <li class="reg-desc-list-item">15% off welcome offer
+              </li>
+              <li class="reg-desc-list-item">Free shipping, returns and exchanges on all orders</li>
+              <li class="reg-desc-list-item">$10 off a purchase on your birthday</li>
+              <li class="reg-desc-list-item">Early access to products</li>
+              <li class="reg-desc-list-item">Exclusive offers & rewards</li>
+            </ul>
+          </div>
+        </div>
 
       </main>
     </div>
