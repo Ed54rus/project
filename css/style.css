@@ -490,9 +490,10 @@ body {
 
 .cart-sidebar {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   max-width: 360px;
-  width: 100%;
+  flex-wrap: wrap;
+  align-items: flex-start;
   padding: 16px 0 16px 0;
 }
 
@@ -1561,6 +1562,7 @@ body {
   box-sizing: border-box;
   background-color: #fff;
 }
+
 /* Price end */
 /* Categories start   */
 .categories {
@@ -1644,6 +1646,7 @@ body {
   line-height: 29px;
   text-transform: uppercase;
 }
+
 /* Categories end */
 /* Products start */
 .products {
