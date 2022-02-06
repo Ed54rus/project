@@ -255,10 +255,16 @@ body {
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
   list-style: none;
   right: 0px;
-  top: -1000px;
+  top: 58px;
+  transform: scaleY(0);
+  transform-origin: top;
   box-sizing: border-box;
   z-index: 20;
-  transition: top .3s;
+  transition: transform .3s;
+}
+
+.menu-list.active {
+  transform: scaleY(1);
 }
 
 .menu-list-close-btn {
@@ -345,11 +351,6 @@ body {
   box-sizing: border-box;
   list-style: none;
 }
-
-.menu-list.active {
-  top: 58px;
-}
-
 
 /* Header with Navy end */
 /* Banner block start */
