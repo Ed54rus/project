@@ -122,7 +122,7 @@ body {
 }
 
 .page-header {
-  padding: 18px 0 20px 0;
+  padding: 18px 0 18px 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background-color: #222;
@@ -382,16 +382,13 @@ body {
 /* Banner block start */
 .page-header-banner {
   background-color: #f1e4e6;
-  margin: 76px 0 0 0;
+  margin: 74px 0 0 0;
 }
 
 .page-header-banner-wrp {
   min-height: 764px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
+  align-items: center;
   justify-content: flex-end;
   background-image: url(../img/preview_1.png);
   background-repeat: no-repeat;
@@ -399,16 +396,17 @@ body {
 }
 
 .page-header-banner-heading {
-  margin: 295px 73px;
+  margin: 0 0 0 0;
+  padding: 0 78px 94px 0;
 }
 
 .page-header-banner-title {
   margin: 0;
-  padding: 0px 0px 0px 0px;
+  padding: 10px 0 0 0;
   max-width: 405px;
   font-weight: 900;
   font-size: 48px;
-  line-height: 44px;
+  line-height: 39px;
   text-transform: uppercase;
   border-left: 12px solid #F16D7F;
   padding-left: 16px;
@@ -1788,7 +1786,7 @@ body {
   margin: 52px auto 109px auto;
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(3, minmax(233px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
 
@@ -1903,12 +1901,9 @@ body {
   margin: 49px 0 33px 0;
   max-width: 1140px;
   width: 100%;
-  display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(auto-fill, 360px);
   gap: 30px;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   list-style-type: none;
   padding: 0;
@@ -1982,7 +1977,7 @@ body {
 }
 
 .products-item-photo {
-  margin: 0 0 25px 0;
+  margin: 0 0 21px 0;
 }
 
 .txt-wrp {
@@ -2363,8 +2358,8 @@ body {
 
 .subscribing-subtitle {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 30px;
+  font-size: 18px;
+  line-height: 22px;
   text-align: center;
   margin-bottom: 32px;
   text-transform: initial;
@@ -2389,6 +2384,7 @@ body {
   padding: 7px 22px;
   background: #E1E1E1;
   border: none;
+  box-sizing: border-box;
   border-radius: 50px 0 0 50px;
 }
 
@@ -2480,3 +2476,124 @@ body {
   fill: #fff;
   background-color: #853842;
 }
+
+/* Home Work 6 Start */
+
+@media (max-width: 812px) {
+  .subscribe-wrp {
+    margin: 0 0 97px 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .page-header {
+    padding: 18px 16px 18px 16px;
+  }
+
+  .account-btn {
+    margin: 0 40px 0 0;
+  }
+
+  .menu-btn {
+    margin: 0 26px 2px 0;
+  }
+
+  .page-header-banner-wrp {
+    min-height: 368px;
+    align-items: center;
+    background-size: contain;
+    background-position: 109px 0;
+  }
+
+  .page-header-banner-heading {
+    max-width: 350px;
+    padding: 0;
+  }
+
+  .page-header-banner-title {
+    font-size: 44px;
+    line-height: 45px;
+    padding: 6px 13px 13px 16px;
+    box-sizing: border-box;
+  }
+
+  .page-header-banner-subtitle,
+  .page-header-banner-subtitle span {
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+  }
+
+  .page-header-banner-subtitle span {
+    margin: 0 0 0 10px;
+  }
+
+  .categories {
+    margin: 20px auto 155px auto;
+    gap: 20px;
+  }
+
+  .categories-item {
+    min-height: 168px;
+    background-size: cover;
+  }
+
+  .categories-item:nth-child(4) {
+    min-height: 116px;
+    background-size: cover;
+  }
+
+  .products-item-list {
+    margin: 71px auto 0 auto;
+    gap: 16px;
+  }
+
+  .products-btn {
+    margin: 30px auto 0 auto;
+  }
+
+  .products {
+    margin: 0 auto 64px auto;
+  }
+
+  .features-item-wrp {
+    flex-direction: column;
+    align-items: center;
+    padding: 44px 0 0 0;
+    margin: 0 0 20px 0;
+  }
+
+  .features-item {
+    margin: 0 0 44px 0;
+  }
+
+  .features-item-icon {
+    margin: 0 0 24px 0;
+  }
+
+  .subscribe-wrp {
+    justify-content: center;
+    padding: 16px;
+  }
+
+  .subscribe-info {
+    padding: 48px 16px 48px 16px;
+  }
+
+
+  .subscribing {
+    padding: 27px 16px 27px 16px;
+  }
+
+  .subscribing-form {
+    margin: 18px 0 0 0;
+  }
+
+  .page-footer {
+    padding: 24px 19px 23px 19px;
+  }
+}
+
+
+
+/* Home Work 6 End */
