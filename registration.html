@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-  <title>Корзина</title>
+  <title>Регистрация</title>
 </head>
 
 <body>
@@ -122,59 +122,43 @@
       <main>
         <section class="page-header-breadcrumbs">
           <div class="page-header-breadcrumbs-wrp content-center">
-            <h2 class="page-heading">shopping cart</h2>
+            <h2 class="page-heading">Registration</h2>
           </div>
         </section>
-        <div class="cartoverview content-center">
-          <div class="cart-items">
-            <article class="cart-item">
-              <img class="cart-item-img" src="img/item_3.jpg" alt="Product photo">
-              <div class="cart-desc">
-                <h2 class="item-name">mango people t-&nbsp;shirt</h2>
-                <div><span class="cart-item-txt">Price:</span><span class="cart-item-price">$300</span></div>
-                <div><span class="cart-item-txt">Color:</span><span class="cart-item-color">Red</span></div>
-                <div><span class="cart-item-txt">Size:</span><span class="cart-item-size">XI</span></div>
-                <div><span class="cart-item-txt">Quantity:</span><input class="cart-item-quan" type="number" min="1"
-                    max="9" value="2"></div>
-              </div>
-              <button class="cart-item-close"></button>
-            </article>
-            <article class="cart-item">
-              <img class="cart-item-img" src="img/item_7.jpg" alt="Product photo">
-              <div class="cart-desc">
-                <h2 class="item-name">mango people t-&nbsp;shirt</h2>
-                <div><span class="cart-item-txt">Price:</span><span class="cart-item-price">$300</span></div>
-                <div><span class="cart-item-txt">Color:</span><span class="cart-item-color">Red</span></div>
-                <div><span class="cart-item-txt">Size:</span><span class="cart-item-size">XI</span></div>
-                <div><span class="cart-item-txt">Quantity:</span><input class="cart-item-quan" type="number" min="1"
-                    max="9" value="2"></div>
-              </div>
-              <button class="cart-item-close"></button>
-            </article>
-            <div class="cart-items-btn">
-              <button class="cart-item-btn cart-item-btn-clear">clear shopping cart</button>
-              <button class="cart-item-btn cart-item-btn-continue">continue shopping</button>
-            </div>
-          </div>
-          <form class="cart-sidebar">
-            <div class="delivery">
-              <h2 class="delivery-heading">shipping adress</h2>
-              <input class="delivery-input" type="text" placeholder="Bangladesh" required>
-              <input class="delivery-input" type="text" placeholder="State" required>
-              <input class="delivery-input" type="text" placeholder="Postcode / Zip" required>
-              <button class="delivery-btn">get a&nbsp;quote</button>
-            </div>
-            <div class="pay">
-              <div class="pay-subtotal-wrp">
-                <span class="pay-subtotal">sub total</span><span
-                  class="pay-subtotal pay-subtotal pay-subtotal-price">$900</span>
-              </div>
-              <div class="pay-grandtotal-wrp"><span class="pay-grandtotal">grand total</span><span
-                  class="pay-grandtotal pay-grandtotal-price">$900</span></div>
-              <button class="pay-btn">proceed to&nbsp;checkout</button>
-            </div>
+
+        <div class="reg-container content-center">
+          <form action="#" class="reg">
+            <span class="reg-txt">Your Name</span>
+            <input class="reg-in" type="text" placeholder="First Name" required>
+            <input class="reg-in" type="text" placeholder="Last Name" required maxlength="40">
+            <input class="reg-gend" type="radio" name="gender" id="male">
+            <label class="reg-gend-txt" for="male">Male</label>
+            <input class="reg-gend" type="radio" name="gender" id="female">
+            <label class="reg-gend-txt" for="female">Female</label>
+            <span class="reg-txt">Login details</span>
+            <input class="reg-in" type="email" name="email" id="email" placeholder="Email" required>
+            <input class="reg-in reg-in-last" type="password" name="pass" id="pass" placeholder="Password" required
+              minlength="8" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$">
+            <p class="reg-hint">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and
+              lowercase letters</p>
+            <button class="submit" type="submit">join now</button>
           </form>
+          <div class="reg-desc-wrp">
+            <h2 class="reg-desc-heading">loyalty has its perks</h2>
+            <p class="reg-desc-txt">Get in on the loyalty program where you can earn points and unlock serious perks.
+              Starting with these as soon as you
+              join:</p>
+            <ul class="reg-desc-list">
+              <li class="reg-desc-list-item">15% off welcome offer
+              </li>
+              <li class="reg-desc-list-item">Free shipping, returns and exchanges on all orders</li>
+              <li class="reg-desc-list-item">$10 off a purchase on your birthday</li>
+              <li class="reg-desc-list-item">Early access to products</li>
+              <li class="reg-desc-list-item">Exclusive offers & rewards</li>
+            </ul>
+          </div>
         </div>
+
       </main>
     </div>
     <section class="subscribe">
