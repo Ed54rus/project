@@ -389,18 +389,26 @@ body {
 }
 
 .page-header-banner-wrp {
+  display: grid;
+  grid-template-columns: repeat(12, auto);
+  grid-template-rows: repeat(12, auto);
   min-height: 764px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+}
+
+.page-header-banner-img {
   background-image: url(../img/preview_1.png);
   background-repeat: no-repeat;
-  background-position: 10px 0;
+  grid-row: span 12;
+  width: 383px;
+  height: 100%;
+
 }
 
 .page-header-banner-heading {
   margin: 0 0 0 0;
-  padding: 0 78px 94px 0;
+  padding: 0 0px 0px 0;
+  grid-column-start: 10;
+  grid-row-start: 6;
 }
 
 .page-header-banner-title {
@@ -434,7 +442,7 @@ body {
 /* Breadcrumbs-start */
 .page-header-breadcrumbs {
   background-color: #F8F3F4;
-  margin: 76px 0 0 0;
+  margin: 74px 0 0 0;
 }
 
 .page-header-breadcrumbs-wrp {
@@ -454,6 +462,7 @@ body {
   font-size: 24px;
   line-height: 29px;
   font-weight: normal;
+  margin: 0;
   color: #f16d7f;
   text-transform: uppercase;
 }
@@ -464,6 +473,7 @@ body {
   display: flex;
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 .breadcrumbs-item:not(:last-child)::after {
@@ -899,17 +909,15 @@ body {
 
 .product-details-wrp {
   max-width: 1140px;
-  width: 96%;
+  width: 100%;
   margin: 0 auto;
   left: 0;
   right: 0;
   padding: 64px 0 0 0;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background-color: #fff;
   border: 1px solid #eaeaea;
   position: absolute;
-  -webkit-transform: translateY(-66px);
   transform: translateY(-66px);
 }
 
@@ -970,7 +978,7 @@ body {
   font-size: 24px;
   line-height: 29px;
   color: #EF5B70;
-  margin: 0 auto 115px auto;
+  margin: 0 auto 130px auto;
 }
 
 .product-details-price::after {
@@ -987,16 +995,15 @@ body {
 
 .choose-items {
   max-width: 412px;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  width: 100%;
   display: flex;
-  -ms-flex-wrap: wrap;
+  justify-content: center;
   flex-wrap: wrap;
-  margin: 0 auto 32px auto;
+  margin: 0 auto 48px auto;
 }
 
 .list-color {
-  padding: 16px 8px 16px 8px;
+  padding: 0;
   border: none;
   background-color: transparent;
   position: relative;
@@ -1110,8 +1117,8 @@ body {
 }
 
 .list-quantity {
-  margin: 0 0 0 26px;
-  padding: 16px 8px 16px 8px;
+  margin: 0 20px 0 26px;
+  padding: 0;
   border: none;
   background-color: transparent;
   position: relative;
@@ -1227,7 +1234,7 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin: 0 0 65px 0;
+  margin: 0 0 64px 0;
 }
 
 .products-item-btn {
@@ -1275,34 +1282,27 @@ body {
 /* Product-details end */
 /* Filter start */
 .container-filter {
-  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(auto-fit, 360px);
   gap: 30px;
-  margin: 36px auto 0;
+  margin: 51px auto 64px;
 }
 
 .filter-items {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   max-width: 360px;
   width: 100%;
   gap: 30px;
-  grid-column-start: 5;
-  grid-column-end: 10;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
 .filter {
-  padding: 13px 16px 16px 16px;
+  padding: 0 16px 0 16px;
   box-sizing: border-box;
   background: #FFFFFF;
   position: relative;
   grid-column-start: 1;
-  grid-column-end: 5;
+  grid-column-end: 1;
 }
 
 .filter-btn,
@@ -1345,8 +1345,8 @@ body {
 
 .filter-list-wrp {
   display: none;
-  z-index: 10;
-  width: 100%;
+  z-index: 11;
+  width: 360px;
   position: absolute;
   top: 0;
   left: 0;
@@ -1452,7 +1452,6 @@ body {
 /* Trending start */
 .list-trending {
   width: 123px;
-  padding: 16px 0px 16px 0px;
   border: none;
   background-color: transparent;
   position: relative;
@@ -1565,7 +1564,7 @@ body {
 /* Trending end */
 /* Size start */
 .list-size {
-  padding: 16px 8px 16px 8px;
+  padding: 0;
   border: none;
   background-color: transparent;
   position: relative;
@@ -1678,7 +1677,7 @@ body {
 /* Size end */
 /* Price start */
 .list-price {
-  padding: 16px 7px 16px 5px;
+  padding: 0 7px 0 5px;
   border: none;
   background-color: transparent;
   position: relative;
@@ -1788,8 +1787,7 @@ body {
 /* Price end */
 /* Categories start   */
 .categories {
-  margin: 52px auto 109px auto;
-  display: -ms-grid;
+  margin: 65px auto 96px auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
@@ -1874,13 +1872,14 @@ body {
 .products-title {
   text-align: center;
   margin: 0 0 6px 0;
+  font-weight: 400;
   font-size: 30px;
   line-height: 36px;
   text-transform: capitalize;
 }
 
 .products-subtitle {
-  margin: 0 0 0 0;
+  margin: 0 0 48px 0;
   font-size: 14px;
   line-height: 17px;
   color: #9F9F9F;
@@ -1892,7 +1891,7 @@ body {
 }
 
 .products-item-list {
-  margin: 49px 0 33px 0;
+  margin: 0;
   max-width: 1140px;
   width: 100%;
   display: grid;
@@ -2341,6 +2340,8 @@ body {
 
 .subscribing {
   padding: 16px;
+  max-width: 400px;
+  width: 100%;
 }
 
 .subscribing-title {
@@ -2461,6 +2462,14 @@ body {
 
 /* Home Work 7 Start */
 
+@media (max-width:1171px) {
+  .container-filter {
+    justify-content: center;
+    margin: 24px auto 40px auto;
+    gap: 16px;
+  }
+}
+
 @media (max-width: 1024px) {
   .page-header {
     padding: 18px 16px 18px 16px;
@@ -2479,6 +2488,12 @@ body {
     align-items: center;
     background-size: contain;
     background-position: 109px 0;
+  }
+
+  .page-header-banner-img {
+    background-size: contain;
+    background-position: 109px 0;
+    width: 294px;
   }
 
   .page-header-banner-heading {
@@ -2504,6 +2519,11 @@ body {
     margin: 0 0 0 10px;
   }
 
+  .product-details-wrp {
+    position: static;
+    transform: translateY(0px);
+  }
+
   .categories {
     margin: 20px auto 155px auto;
     gap: 20px;
@@ -2519,8 +2539,15 @@ body {
     background-size: cover;
   }
 
+  .product-details {
+    margin: 0 auto 128px;
+  }
+
+  .products-subtitle {
+    margin: 0 0 72px 0;
+  }
+
   .products-item-list {
-    margin: 71px auto 0 auto;
     gap: 16px;
   }
 
@@ -2529,14 +2556,27 @@ body {
   }
 
   .products {
-    margin: 0 auto 64px auto;
+    margin: 0 auto 128px auto;
+  }
+
+  .slider-container {
+    background-color: #f7f7f7;
+    min-height: 624px;
+  }
+
+  .w-auto {
+    width: 466px !important;
+  }
+
+  .pagination {
+    margin: 0 auto 33px auto;
   }
 
   .features-item-wrp {
     flex-direction: column;
     gap: 46px;
     align-items: center;
-    padding: 44px 0 20px 0;
+    padding: 44px 0 64px 0;
   }
 
   .features-item-icon {
@@ -2544,14 +2584,13 @@ body {
   }
 
   .subscribe-wrp {
-    justify-content: center;
     padding: 16px;
   }
 
   .subscribe-info {
     padding: 48px 16px 48px 16px;
+    max-width: 290px;
   }
-
 
   .subscribing {
     padding: 27px 16px 27px 16px;
@@ -2566,7 +2605,6 @@ body {
   }
 }
 
-
 @media (max-width: 812px) {
 
   .subscribe-wrp {
@@ -2574,16 +2612,51 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .container-filter {
+    display: flex;
+  }
+
+  .filter {
+    padding: 0;
+  }
+
+  .filter-items {
+    max-width: 307px;
+  }
+
+  .filter-btn svg {
+    margin: 0;
+    width: 37px;
+    height: 25px;
+  }
+
+  .filter-btn span {
+    display: none;
+  }
+
+  .subscribe-wrp {
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
 @media (max-width: 660px) {
 
   .page-header-banner-wrp {
-    background-image: none;
     justify-content: center;
     min-height: 363px;
+  }
+
+  .page-header-banner-img {
+    display: none;
   }
 }
 
 @media (max-width: 500px) {
+  .content-center {
+    padding: 0 8px 0 8px;
+  }
 
   .page-header {
     padding: 18px 0;
@@ -2613,6 +2686,14 @@ body {
     margin: 0 7px 1px 0;
   }
 
+  .page-header-breadcrumbs-wrp {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 32px;
+    padding: 24px 0 45px 0;
+  }
+
   .page-header-banner-wrp {
     justify-content: center;
     min-height: 363px;
@@ -2634,6 +2715,15 @@ body {
     line-height: 22px;
   }
 
+  .w-auto {
+    width: 375px !important;
+    padding: 85px 0 85px 0;
+  }
+
+  .product-details-txt {
+    line-height: 20px;
+  }
+
   .categories {
     margin: 64px auto 64px auto;
     width: 100%;
@@ -2651,8 +2741,12 @@ body {
     min-height: 111px;
   }
 
+  .products-subtitle {
+    margin: 0 0 64px 0;
+  }
+
   .products {
-    margin: 0 auto 96px auto;
+    margin: 0 auto 64px auto;
   }
 
   .products-btn {
@@ -2679,7 +2773,7 @@ body {
 
   .subscribing {
     padding: 18px 0 27px 0;
-    max-width: 660px;
+    max-width: 310px;
     width: 100%;
   }
 
@@ -2705,7 +2799,6 @@ body {
     justify-content: center;
     gap: 40px;
   }
-
 }
 
 /* Home Work 7 End */
