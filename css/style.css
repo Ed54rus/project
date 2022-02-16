@@ -195,9 +195,11 @@ body {
   width: 0;
   min-height: 0;
   outline: none;
+  padding: 0;
   box-sizing: border-box;
-  background-color: transparent;
+  background-color: #222;
   border: none;
+  border-radius: 8px;
   top: -6px;
   left: 42px;
   color: #fff;
@@ -207,6 +209,7 @@ body {
 .page-header-search-input:focus {
   width: 300px;
   border: 2px solid #fff;
+  background-color: #222;
   border-radius: 8px;
   padding: 8px;
   cursor: text;
@@ -278,7 +281,7 @@ body {
   background-color: #fff;
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
   right: 0px;
-  top: 58px;
+  top: 56px;
   box-sizing: border-box;
 }
 
@@ -1283,7 +1286,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 360px;
+  max-width: 360px;
+  width: 100%;
   gap: 30px;
   grid-column-start: 5;
   grid-column-end: 10;
@@ -1792,30 +1796,19 @@ body {
 }
 
 .categories-item {
-  -ms-flex-item-align: center;
   align-self: center;
   text-decoration: none;
   min-height: 260px;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   background-color: rgba(33, 22, 22, 0.7);
   background-blend-mode: darken;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   position: relative;
   transition: background-color 0.4s, background-blend-mode .4s;
 }
@@ -1912,6 +1905,7 @@ body {
 
 .products-item {
   max-width: 360px;
+  width: 100%;
   background-color: #F8F8F8;
   padding: 0 0 20px 0;
   position: relative;
@@ -2326,13 +2320,14 @@ body {
   -ms-flex-align: center;
   align-items: center;
   max-width: 360px;
+  width: 100%;
   padding: 16px;
 }
 
 .subscribe-info-avatar {
   width: 96px;
   height: 96px;
-  margin: 0 0 30px 0;
+  margin: 0 20px 25px 0;
   background: url(../img/subscribe-ava.png);
 }
 
@@ -2370,10 +2365,10 @@ body {
 }
 
 .subscribing-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+  justify-content: center;
   margin: 32px 0 0 0;
+  width: 100%;
 }
 
 .subscribing-form-email {
@@ -2381,7 +2376,8 @@ body {
   line-height: 17px;
   color: #222224;
   opacity: 0.67;
-  width: 256px;
+  max-width: 256px;
+  width: 100%;
   padding: 7px 22px;
   background: #E1E1E1;
   border: none;
@@ -2415,20 +2411,14 @@ body {
 
 .page-footer {
   padding: 24px 0 23px 0;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background-color: #222224;
 }
 
 .page-footer-wrp {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
+  flex-wrap: wrap;
   justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -2440,27 +2430,18 @@ body {
 }
 
 .page-footer-socials {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .page-footer-socials-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   height: 32px;
   width: 32px;
   background-color: #fff;
   background-size: cover;
   margin: 0 7px 0 0;
-  -webkit-transition: .3s;
   transition: .3s;
 }
 
@@ -2478,13 +2459,7 @@ body {
   background-color: #853842;
 }
 
-/* Home Work 6 Start */
-
-@media (max-width: 812px) {
-  .subscribe-wrp {
-    margin: 0 0 97px 0;
-  }
-}
+/* Home Work 7 Start */
 
 @media (max-width: 1024px) {
   .page-header {
@@ -2559,13 +2534,9 @@ body {
 
   .features-item-wrp {
     flex-direction: column;
+    gap: 46px;
     align-items: center;
-    padding: 44px 0 0 0;
-    margin: 0 0 20px 0;
-  }
-
-  .features-item {
-    margin: 0 0 44px 0;
+    padding: 44px 0 20px 0;
   }
 
   .features-item-icon {
@@ -2595,4 +2566,146 @@ body {
   }
 }
 
-/* Home Work 6 End */
+
+@media (max-width: 812px) {
+
+  .subscribe-wrp {
+    margin: 0 0 97px 0;
+  }
+}
+
+@media (max-width: 660px) {
+
+  .page-header-banner-wrp {
+    background-image: none;
+    justify-content: center;
+    min-height: 363px;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .page-header {
+    padding: 18px 0;
+  }
+
+  .page-header-nav {
+    align-items: center;
+  }
+
+  .page-header-search {
+    padding: 7px 0 0 0;
+  }
+
+  .page-header-search-input:focus {
+    width: 200px;
+  }
+
+  .account-btn {
+    display: none;
+  }
+
+  .cart-btn {
+    display: none;
+  }
+
+  .menu-btn {
+    margin: 0 7px 1px 0;
+  }
+
+  .page-header-banner-wrp {
+    justify-content: center;
+    min-height: 363px;
+  }
+
+  .page-header-banner-title {
+    font-size: 38px;
+    line-height: 38px;
+    padding: 0 0 0 13px;
+  }
+
+  .page-header-banner-subtitle {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .page-header-banner-subtitle span {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .categories {
+    margin: 64px auto 64px auto;
+    width: 100%;
+    justify-content: center;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 32px;
+  }
+
+  .categories-item {
+    min-height: 248px;
+  }
+
+  .categories-item:nth-child(4) {
+    grid-column: span 1;
+    min-height: 111px;
+  }
+
+  .products {
+    margin: 0 auto 96px auto;
+  }
+
+  .products-btn {
+    margin: 40px auto 0 auto;
+  }
+
+  .features-item-wrp {
+    gap: 46px;
+    padding: 44px 0 80px 0;
+  }
+
+  .features-item-list {
+    margin: 62px auto 0 auto;
+  }
+
+  .subscribe-wrp {
+    margin: 0 0 66px 0;
+  }
+
+  .subscribe-info-txt {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .subscribing {
+    padding: 18px 0 27px 0;
+    max-width: 660px;
+    width: 100%;
+  }
+
+  .subscribing-title {
+    line-height: 37px;
+  }
+
+  .subscribing-subtitle {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .subscribing-form {
+    margin: 23px auto 0 auto;
+    justify-content: center;
+  }
+
+  .page-footer {
+    padding: 43px 19px 8px 19px;
+  }
+
+  .page-footer-wrp {
+    justify-content: center;
+    gap: 40px;
+  }
+
+}
+
+/* Home Work 7 End */
