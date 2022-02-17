@@ -2294,16 +2294,9 @@ body {
 }
 
 .subscribe-wrp {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -2650,6 +2643,11 @@ body {
 
   .page-header-banner-img {
     display: none;
+  }
+
+  .product-details-price::after {
+    max-width: 175px;
+    width: 100%;
   }
 }
 
