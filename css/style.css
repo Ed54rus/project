@@ -526,7 +526,6 @@ body {
   margin: 0 0 40px 0;
   display: flex;
   justify-content: space-between;
-  max-width: 652px;
   width: 100%;
   box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
   position: relative;
@@ -539,11 +538,14 @@ body {
 }
 
 .cart-desc {
-  padding: 22px 97px 22px 31px;
+  margin: 0 auto 0 0;
+  padding: 22px 8px 22px 31px;
 }
 
 .item-name {
   text-transform: uppercase;
+  max-width: 280px;
+  width: 100%;
   font-size: 24px;
   font-weight: 400;
   line-height: 29px;
@@ -2463,6 +2465,26 @@ body {
   }
 }
 
+@media(max-width: 1060px) {
+  .cartoverview {
+    justify-content: center;
+  }
+
+  .cart-items {
+    max-width: 734px;
+  }
+
+  .cart-sidebar {
+    max-width: 734px;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  .pay {
+    margin: 39px 0 0 0;
+  }
+}
+
 @media (max-width: 1024px) {
   .page-header {
     padding: 18px 16px 18px 16px;
@@ -2610,6 +2632,19 @@ body {
     display: flex;
   }
 
+  .cart-sidebar {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .delivery {
+    margin: 0 0 48px 0;
+  }
+
+  .pay {
+    margin: 39px 0 0 0;
+  }
+
   .filter {
     padding: 0;
   }
@@ -2639,6 +2674,81 @@ body {
   .page-header-banner-wrp {
     justify-content: center;
     min-height: 363px;
+  }
+
+  .item-name {
+    font-size: 16px;
+    line-height: 19px;
+    margin: 0 0 25px 0;
+    max-width: 185px;
+  }
+
+  .cart-item-txt {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .cart-item-price {
+    font-size: 14px;
+    line-height: 17px;
+
+  }
+
+  .cart-item-color {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .cart-item-size {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .cart-item-quan {
+    width: 24px;
+    height: 0px;
+    font-size: 10px;
+    line-height: 12px;
+    margin: 0 0 0 25px;
+  }
+
+  .cart-item-img {
+    height: 188px;
+  }
+
+  .cart-desc {
+    padding: 13px 2px 13px 17px;
+  }
+
+  .cart-item-close::before,
+  .cart-item-close::after {
+    width: 12px;
+    height: 2px;
+    top: 17px;
+    right: 9px;
+  }
+
+  .cart-item-close {
+    width: 35px;
+    height: 50px;
+  }
+
+  .cart-items-btn {
+    gap: 10px;
+  }
+
+  .cart-item-btn {
+    max-width: 175px;
+    text-align: center;
+    width: 100%;
+    padding: 9px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .cartoverview {
+    margin: 39px auto 96px auto;
+
   }
 
   .page-header-banner-img {
@@ -2690,6 +2800,10 @@ body {
     align-items: center;
     gap: 32px;
     padding: 24px 0 45px 0;
+  }
+
+  .cart-mobile-center {
+    justify-content: center;
   }
 
   .page-header-banner-wrp {
