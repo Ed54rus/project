@@ -2068,7 +2068,7 @@ body {
 /* Registration start */
 .reg-container {
   display: flex;
-  flex-wrap: wrap;
+  gap: 22px;
   justify-content: space-between;
   margin: 62px auto 96px auto;
 }
@@ -2474,6 +2474,7 @@ body {
     max-width: 734px;
   }
 
+
   .cart-sidebar {
     max-width: 734px;
     justify-content: space-between;
@@ -2663,6 +2664,22 @@ body {
     display: none;
   }
 
+  .reg-desc-heading {
+    font-size: 16px;
+    line-height: 19px;
+    margin: 0 0 32px 0;
+  }
+
+  .reg-desc-list-item {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .reg-desc-txt {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
   .subscribe-wrp {
     justify-content: center;
     flex-direction: column;
@@ -2759,6 +2776,15 @@ body {
     max-width: 175px;
     width: 100%;
   }
+.reg-container{
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.reg-desc-wrp{
+  max-width: 358px;
+}
+
 }
 
 @media (max-width: 500px) {
