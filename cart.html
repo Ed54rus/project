@@ -121,12 +121,12 @@
       </header>
       <main>
         <section class="page-header-breadcrumbs">
-          <div class="page-header-breadcrumbs-wrp content-center">
+          <div class="page-header-breadcrumbs-wrp cart-mobile-center content-center">
             <h2 class="page-heading">shopping cart</h2>
           </div>
         </section>
         <div class="cartoverview content-center">
-          <div class="cart-items">
+          <form class="cart-items">
             <article class="cart-item">
               <img class="cart-item-img" src="img/item_3.jpg" alt="Product photo">
               <div class="cart-desc">
@@ -152,17 +152,17 @@
               <button class="cart-item-close"></button>
             </article>
             <div class="cart-items-btn">
-              <button class="cart-item-btn cart-item-btn-clear">clear shopping cart</button>
-              <button class="cart-item-btn cart-item-btn-continue">continue shopping</button>
+              <button class="cart-item-btn cart-item-btn-clear" type="reset">clear shopping cart</button>
+              <a class="cart-item-btn cart-item-btn-continue" href="catalog.html">continue shopping</a>
             </div>
-          </div>
+          </form>
           <form class="cart-sidebar">
             <div class="delivery">
               <h2 class="delivery-heading">shipping adress</h2>
               <input class="delivery-input" type="text" placeholder="Bangladesh" required>
               <input class="delivery-input" type="text" placeholder="State" required>
               <input class="delivery-input" type="text" placeholder="Postcode / Zip" required>
-              <button class="delivery-btn">get a&nbsp;quote</button>
+              <button class="delivery-btn" type="submit">get a&nbsp;quote</button>
             </div>
             <div class="pay">
               <div class="pay-subtotal-wrp">
@@ -171,7 +171,7 @@
               </div>
               <div class="pay-grandtotal-wrp"><span class="pay-grandtotal">grand total</span><span
                   class="pay-grandtotal pay-grandtotal-price">$900</span></div>
-              <button class="pay-btn">proceed to&nbsp;checkout</button>
+              <button class="pay-btn" type="submit">proceed to&nbsp;checkout</button>
             </div>
           </form>
         </div>
@@ -187,7 +187,7 @@
         </div>
         <div class="subscribing">
           <h2 class="subscribing-title">subscribe</h2>
-          <h3 class="subscribing-subtitle">subscribe for our newletter and promotion</h3>
+          <h3 class="subscribing-subtitle">for our newletter and promotion</h3>
           <form action="#!" class="subscribing-form">
             <input class="subscribing-form-email" type="email" placeholder="Enter Your Email" required>
             <input class="subscribing-form-btn" type="submit" value="Subscribe">
